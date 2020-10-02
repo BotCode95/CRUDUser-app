@@ -15,7 +15,8 @@ const Usuario = ({usuario}) => {
 
     const seleccionarUsuario = usuario => {
         guardarUsuarioActual(usuario)
-        history.push(`/nueva-cuenta/${usuario._id}`)
+        history.push(`/usuarios/${usuario._id}`)
+        // history.push('/usuarios')
     }
 
     return (
