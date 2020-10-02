@@ -47,11 +47,6 @@ switch(action.type){
                     ? action.payload 
                     : contacto)
             }
-        // case CONTACTO_ACTUAL:
-        //     return {
-        //         ...state,
-        //         contacto: state.contactos.filter(contacto => contacto._id === action.payload)
-        //     }
         case CONTACTO_ACTUAL:
             return {
                 ...state,

@@ -17,7 +17,7 @@ const Login = (props) => {
       //en caso de que el usuario o password no exista
       useEffect(() => {   
         if(autenticado){
-            props.history.push('/contactos');
+            props.history.push('/usuarios');
         }
 
         if(mensaje){

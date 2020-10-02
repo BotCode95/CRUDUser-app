@@ -28,5 +28,4 @@ const RutaPrivada = ({ component: Component, ...props}) => {
     );
 }
 
-
 export default RutaPrivada;

@@ -12,16 +12,11 @@ const NuevaCuenta = (props) => {
     const authContext = useContext(AuthContext);
     const { mensaje, autenticado, registrarUsuario} = authContext;
 
-    // const usuariosContext = useContext(usuarioContext);
-    // const { usuarios, obtenerUsuarios} = usuariosContext;
     //en caso de que el usuario se haya autenticado/registrado o es un registro duplicado
     useEffect(() => {   
         if(autenticado){
-            props.history.push('/listado');
+            props.history.push('/usuarios');
         }
-        // if(usuarios != null){
-        //     obtenerUsuarios();
-        // }
 
         if(mensaje){
             mostrarAlerta(mensaje.msg, mensaje.categoria);
@@ -66,12 +61,12 @@ const NuevaCuenta = (props) => {
             return;
         }
 
-        //los 2 password iguales
+        //los 2 password deben ser iguales
          if(password !== confirmar){
             mostrarAlerta('La contraseña no coinciden', 'alerta-error');
             return;
         }
-        // obtenerUsuarios();
+        
         //pasarlo al action
         registrarUsuario({
             nombre,

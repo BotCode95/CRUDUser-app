@@ -102,7 +102,6 @@ const NuevoContacto = () => {
                             value={nombre}
                             onChange={onChange} />
                     </div>
-                    
                     <div className="campo-form">
                         <label htmlFor="apellido">Apellido</label>
                         <input 

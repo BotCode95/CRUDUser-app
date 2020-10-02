@@ -1,8 +1,8 @@
 :root {
   --blanco: #ffffff;
   --gris1: #edf2f6;
-  --gris2: #2f3848;
-  --gris3: #1a202d;
+  --gris2: #666786; 
+  --gris3: #2f3848;
   --negro: #000000;
   --headingFont:'Raleway', sans-serif;
   --textFont:  'Roboto', sans-serif;
@@ -72,7 +72,7 @@ a {
   background: var(--gris3);
 }
 .btn-secundario {
-  background-color: var(--gris1);
+  background-color: var(--gris3);
 }
 .btn-block {
   display: block;
@@ -95,11 +95,7 @@ a {
       /* order:1; */
       min-height: 100vh;
   }
-/* 
-  aside {
-      background-color: var(--blanco);
-      flex: 0 0 300px;
-  } */
+
   .form-contacto{
     background-color: var(--blanco);
       flex: 0 0 800px;

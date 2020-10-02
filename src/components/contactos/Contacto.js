@@ -8,36 +8,23 @@ const Contacto = ({contacto}) => {
     const contactosContext = useContext(contactoContext);
     const {eliminarContacto, contactoActual, obtenerContacto, guardarContactoActual} = contactosContext;
 
-    // const [contactoActual] = contacto;
-
     const contactoEliminar = id => {
         eliminarContacto(id, contactoActual._id); //, contactoActual._id
     }
 
-    //function para contacto actual
-    // const seleccionarContacto = id => {
-    //     contactoActual(id); //
-    //     obtenerContacto(id);
-    // }
     const seleccionarContacto = contacto => {
         guardarContactoActual(contacto)
     }
 
     return ( 
         <li>
-        <div>
-        <p>{contacto.nombre}</p>
-        <p>{contacto.apellido}</p>
-        <p>{contacto.telefono}</p>
-        <p>{contacto.ciudad}</p>
-        <p>{contacto.email}</p>
-        </div>
-            {/* <button
-                type="button"
-                className="btn btn-blank"
-                onClick={() => seleccionarContacto(contacto._id)}
-            >{contacto.nombre}</button> */}
-            
+            <div>
+                <p>{contacto.nombre}</p>
+                <p>{contacto.apellido}</p>
+                <p>{contacto.telefono}</p>
+                <p>{contacto.ciudad}</p>
+                <p>{contacto.email}</p>
+            </div>    
             <div className="acciones">
             <button
                 type="button"    
