@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import usuarioContext from '../../context/usuarios/usuarioContext'
 
 const Usuario = ({usuario}) => {
@@ -7,12 +7,15 @@ const Usuario = ({usuario}) => {
     const usuariosContext = useContext(usuarioContext);
     const {eliminarUsuario, usuarioActual, guardarUsuarioActual} = usuariosContext;
     
+    const history = useHistory();
+
     const usuarioEliminar = id => {
         eliminarUsuario(id, usuarioActual._id)
     }
 
     const seleccionarUsuario = usuario => {
         guardarUsuarioActual(usuario)
+        history.push(`/nueva-cuenta/${usuario._id}`)
     }
 
     return (
