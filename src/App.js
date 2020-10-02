@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Switch, Route}  from 'react-router-dom'
+import Login from './components/auth/Login'
+import NuevaCuenta from './components/auth/NuevaCuenta'
+import Contactos from './components/contactos/Contactos'
+import AlertaState from './context/alertas/alertaState';
+import AuthState from './context/autenticacion/authState';
+import ContactoState from './context/contactos/contactoState'
+import tokenAuth from './config/tokenAuth';
+import RutaPrivada from './components/rutas/rutaPrivada'
+//revisar si tenemos un token 
+const token = localStorage.getItem('token');
+if(token){
+  tokenAuth(token);
+}
+
 
 function App() {
+
+  console.log(process.env.REACT_APP_BACKEND_URL);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContactoState>
+      <AlertaState>
+        <AuthState>
+          <Router>
+            <Switch>
+              <Route exact path="/" component ={Login}/>
+              <Route exact path="/nueva-cuenta" component ={NuevaCuenta}/>
+              <RutaPrivada exact path="/contactos" component ={Contactos}/>
+            </Switch>
+          </Router>
+        </AuthState>
+      </AlertaState>
+    </ContactoState>
   );
 }
 
