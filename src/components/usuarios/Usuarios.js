@@ -11,6 +11,7 @@ const Usuarios = () => {
 
     useEffect(() => {
         usuarioAutenticado();
+          //eslint-disable-next-line
     },[])
 
     return (

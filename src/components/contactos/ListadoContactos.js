@@ -16,7 +16,9 @@ const ListadoContactos = () => {
         if(mensaje){
             mostrarAlerta(mensaje.msg, mensaje.categoria);
         }
+
     obtenerContacto();
+      //eslint-disable-next-line
     }, [mensaje])
 
     if(contactos.length === 0)return <p>No hay contactos, agrega uno</p>

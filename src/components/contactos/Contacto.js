@@ -6,7 +6,7 @@ const Contacto = ({contacto}) => {
 
     //get state from the project
     const contactosContext = useContext(contactoContext);
-    const {eliminarContacto, contactoActual, obtenerContacto, guardarContactoActual} = contactosContext;
+    const {eliminarContacto, contactoActual, guardarContactoActual} = contactosContext;
 
     const contactoEliminar = id => {
         eliminarContacto(id, contactoActual._id); //, contactoActual._id

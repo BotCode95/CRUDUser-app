@@ -17,6 +17,7 @@ const ListadoUsuarios = () => {
             mostrarAlerta(mensaje.msg, mensaje.categoria);
         }
         obtenerUsuario();
+        //eslint-disable-next-line
     }, [mensaje])
 
     if(usuarios.length === 0)return <p>No hay usuarios, agrega uno</p>

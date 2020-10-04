@@ -2,7 +2,7 @@ import React, {useState, useContext, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import AlertContext from '../../context/alertas/alertaContext';
 import AuthContext from '../../context/autenticacion/authContext';
-// import usuarioContext from '../../context/usuarios/usuariosContext';
+
 
 const NuevaCuenta = (props) => {
     //extraer los valores del context

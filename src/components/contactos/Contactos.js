@@ -1,7 +1,6 @@
 import React, {useContext, useEffect} from 'react';
 import Formulario from '../layout/Formulario'
 import Barra from '../layout/Barra'
-// import ListadoContactos from '../contactos/ListadoContactos'
 import AuthContext from '../../context/autenticacion/authContext'
 
 
@@ -11,6 +10,7 @@ const Contactos = () => {
 
     useEffect(() => {
         usuarioAutenticado();
+          //eslint-disable-next-line
     },[])
 
     return (

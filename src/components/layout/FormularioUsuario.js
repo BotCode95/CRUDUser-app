@@ -1,7 +1,7 @@
 import React from 'react';
 import EditarUsuario from '../usuarios/EditarUsuario';
 import ListadoUsuario from '../usuarios/ListadoUsuarios'
-// import EditarUsuario from '../usuarios/EditarUsuario'
+
 
 const FormularioUsuario = () => {
     return (

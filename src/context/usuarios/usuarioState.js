@@ -3,7 +3,6 @@ import usuarioContext from './usuarioContext';
 import usuarioReducer from './usuarioReducer';
 import {
         OBTENER_USUARIO,
-        AGREGAR_USUARIO,
         ACTUALIZAR_USUARIO,
         ELIMINAR_USUARIO,
         VALIDAR_USUARIO,
@@ -46,27 +45,6 @@ const UsuarioState = props => {
             })
         }
     }
-
-    // const agregarUsuario = async usuario => {
-    //     try {
-    //         const resultado = await clienteAxios.post('/api/usuarios', usuario)
-
-    //         dispatch({
-    //             type: AGREGAR_USUARIO,
-    //             payload: resultado.data
-    //         })
-    //     } catch (error) {
-    //         const alerta = {
-    //             msg: 'Hubo un error',
-    //             categoria: 'alerta-error'
-    //         }
-    //         dispatch({
-    //             type: USUARIO_ERROR,
-    //             payload: alerta
-    //         })
-    //     }
-    // }
-
       //Valida el formulario por errores
       const mostrarError = () => {
         dispatch({
