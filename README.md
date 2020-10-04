@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Pasos a seguir
 
-Proyecto frontend React con mongoDB y repositorio del backend https://github.com/BotCode95/CRUDUser-servidor/ <br>
+Proyecto creado en React con mongoDB y node -> repositorio del backend https://github.com/BotCode95/CRUDUser-servidor/ <br>
 Octubre 2020
 ### `npm install`
 ### `npm start`
@@ -19,5 +19,12 @@ http://localhost:3000/contactos --ruta privada </br>
 usuario para iniciar sesion <hr>
 usuario:  correo@gmail.com </br>
 contraseña: 123456 </br>
+<br>
+
+cada usuario creado estara autenticado con JWT
+ademas cada uno de los usuarios puede tener una lista de contactos con <br>
+(nombre,apellido,telefono,ciudad y mail) <br>
+se pueden editar, eliminar o agregar desde el frontend <br>
+
 
 
