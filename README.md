@@ -15,8 +15,8 @@ http://localhost:3000/nueva-cuenta --obtener cuenta </br>
 http://localhost:3000/usuarios  --ruta privada </br>
 http://localhost:3000/contactos --ruta privada </br>
 
-usuario para iniciar sesion
-usuario:  correo@gmail.com
-contraseña: 123456
+usuario para iniciar sesion <hr>
+usuario:  correo@gmail.com </br>
+contraseña: 123456</br>
 
 
