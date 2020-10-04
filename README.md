@@ -1,8 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Pasos a seguir
 
-In the project directory, you can run:
+Proyecto frontend React con mongoDB y repositorio del backend https://github.com/BotCode95/CRUDUser-servidor/ <br>
+Octubre 2020
 
 ### `npm start`
 
