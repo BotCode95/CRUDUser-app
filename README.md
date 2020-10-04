@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Proyecto frontend React con mongoDB y repositorio del backend https://github.com/BotCode95/CRUDUser-servidor/ <br>
 Octubre 2020
-
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.<br />
