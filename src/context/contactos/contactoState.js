@@ -29,27 +29,6 @@ const ContactoState = props => {
     //create dispacth y state
     const [state, dispatch] = useReducer(contactoReducer, initialState);
 
-    // const obtenerContacto = async () => {
-    //     // console.log(contacto)
-    //     try {
-    //         const resultado = await clienteAxios.get('/api/contactos');
-    //         console.log(resultado)
-    //         dispatch( {
-    //             type: OBTENER_CONTACTOS,
-    //             payload: resultado.data.contactos
-    //         })
-    //     } catch (error) {
-    //         const alerta = {
-    //             msg: 'Hubo un error',
-    //             categoria: 'alerta-error'
-    //         }
-    //         dispatch({
-    //             type: CONTACTO_ERROR,
-    //             payload: alerta
-    //         })
-    //     }
-    // }
-
     const obtenerContacto = async () => {
         // console.log(contacto)
         try {

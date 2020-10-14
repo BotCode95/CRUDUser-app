@@ -4,7 +4,7 @@ import contactoContext from '../../context/contactos/contactoContext'
 
 const Contacto = ({contacto}) => {
 
-    //get state from the project
+    //get state from the proyect
     const contactosContext = useContext(contactoContext);
     const {eliminarContacto, contactoActual, guardarContactoActual} = contactosContext;
 

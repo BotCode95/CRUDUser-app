@@ -10,7 +10,6 @@ import AuthState from './context/autenticacion/authState';
 import ContactoState from './context/contactos/contactoState'
 import tokenAuth from './config/tokenAuth';
 import RutaPrivada from './components/rutas/rutaPrivada'
-import { USUARIO_ACTUAL } from './types';
 import UsuarioState from './context/usuarios/usuarioState';
 
 //revisar si tenemos un token 
