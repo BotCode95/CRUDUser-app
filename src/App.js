@@ -24,21 +24,21 @@ function App() {
   console.log(process.env.REACT_APP_BACKEND_URL);
   return (
     <UsuarioState>
-    <ContactoState>
-      <AlertaState>
-        <AuthState>
-          <Router>
-            <Switch>
-              <Route exact path="/" component ={Login}/>
-              <Route exact path="/nueva-cuenta" component ={NuevaCuenta}/>
-              <RutaPrivada exact path="/contactos" component ={Contactos}/>
-              <RutaPrivada exact path="/usuarios" component ={Usuarios}/>
-              <RutaPrivada exact path= "`/usuarios/${usuario._id}`" component ={EditarUsuario}/>
-            </Switch>
-          </Router>
-        </AuthState>
-      </AlertaState>
-    </ContactoState>
+      <ContactoState>
+        <AlertaState>
+          <AuthState>
+            <Router>
+              <Switch>
+                <Route exact path="/" component ={Login}/>
+                <Route exact path="/nueva-cuenta" component ={NuevaCuenta}/>
+                <RutaPrivada exact path="/usuarios/contactos" component ={Contactos}/>
+                <RutaPrivada exact path="/usuarios" component ={Usuarios}/>
+                <RutaPrivada exact path= "`/usuarios/${usuario._id}`" component ={EditarUsuario}/>
+              </Switch>
+            </Router>
+          </AuthState>
+        </AlertaState>
+      </ContactoState>
     </UsuarioState> 
   );
 }

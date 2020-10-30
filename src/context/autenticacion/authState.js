@@ -35,7 +35,7 @@ const AuthState = props => {
                 payload: respuesta.data
             })
 
-            //obtener usuario
+            //obtener usuario inicia de manera exitosa
             usuarioAutenticado();
         } catch (error) {
             // console.log(error.response.data.msg);

@@ -4,6 +4,7 @@ import AuthContext from '../../context/autenticacion/authContext'
 //higher order components
 
 const RutaPrivada = ({ component: Component, ...props}) => {
+    
     const authContext = useContext(AuthContext);
     const { autenticado, cargando, usuarioAutenticado } = authContext;
 

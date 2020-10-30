@@ -6,9 +6,9 @@ import AlertContext from '../../context/alertas/alertaContext';
 const Login = (props) => {
 
     
-      //extraer los valores del context
-      const alertaContext = useContext(AlertContext);
-      const {alerta, mostrarAlerta} = alertaContext;
+    //extraer los valores del context
+    const alertaContext = useContext(AlertContext);
+    const {alerta, mostrarAlerta} = alertaContext;
 
     //state usuario
     const authContext = useContext(AuthContext);
